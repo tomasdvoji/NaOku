@@ -39,11 +39,6 @@ h2{font-size:clamp(2rem,4.2vw,3.2rem);color:var(--wine)}
 .thread{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;overflow:visible}
 .thread path{fill:none;stroke:var(--wine);stroke-width:2.2;stroke-linecap:round;opacity:.36;stroke-dasharray:1;stroke-dashoffset:1}
 /* mašlička na konci nitky */
-/* mašle se postupně "zavazuje" – kreslení řídí script.js podle posledního úseku nitky */
-#thread-bow{opacity:.45}
-#thread-bow path{fill:none;stroke:var(--wine);stroke-width:2.2;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;opacity:1}
-#thread-bow circle{fill:var(--wine);opacity:0}
-
 /* háčky: pořád dokola dělají smyčku „zapíchnout – zachytit – protáhnout“ */
 .hooks path{fill:none;stroke:var(--wine);stroke-width:2.8;stroke-linecap:round;stroke-linejoin:round}
 .hooks circle{fill:var(--wine)}
@@ -137,6 +132,9 @@ section{padding:clamp(2.5rem,5vw,4.5rem) var(--pad);max-width:var(--max);margin:
 .grid+.grid{margin-top:var(--gap)}
 .tile{display:block;border-radius:var(--r);overflow:hidden;background:var(--oat);transition:transform .45s var(--ease),box-shadow .45s var(--ease)}
 .tile img{width:100%;transition:transform .7s var(--ease)}
+/* jednotné zarovnání: všechny dlaždice v mřížce mají stejný poměr (drobný ořez, nikdy roztažení) */
+.cols-4 .tile img{aspect-ratio:1/1;object-fit:cover}
+.cols-3 .tile img{aspect-ratio:3/2;object-fit:cover}
 .tile:hover{transform:translateY(-3px);box-shadow:0 14px 30px -18px rgba(43,27,31,.5)}
 .tile:hover img{transform:scale(1.03)}
 @media (max-width:900px){.cols-4{grid-template-columns:repeat(3,1fr)}}

@@ -94,15 +94,13 @@ function thread() {
     const amp = w * 0.46, cx = w / 2;
     let d = `M ${sx + 1.2} ${sy}`, px = sx; // +1.2: zakulacený konec nepřekrývá nitku ze scény (jinak tmavší tečka)
     for (let i = 1; i <= bends; i++) {
-      const y = sy + seg * i, py = y - seg / 2;
-      const x = i === bends ? cx : cx + (i % 2 ? 1 : -1) * amp; // poslední úsek končí uprostřed nad ceníkem
+      const y = sy + seg * i, py = y - seg / 2, x = cx + (i % 2 ? 1 : -1) * amp;
       // první úsek: z háčků odejít vodorovně doprava, teprve pak klesat (ať nitka nekříží text v hero)
       d += i === 1 ? ` C ${px + amp * 0.9} ${sy}, ${x} ${py}, ${x} ${y}` : ` C ${px} ${py}, ${x} ${py}, ${x} ${y}`;
       px = x;
     }
     path.setAttribute('d', d);
     path.dataset.sy = sy; path.dataset.ey = ey;
-    document.getElementById('thread-bow')?.setAttribute('transform', `translate(${cx} ${ey + 3})`);
     draw();
   };
   // konec nitky "jede" se scrollem: dotahuje se do ~3/4 obrazovky a na konci trasy se zastaví.
@@ -117,30 +115,24 @@ function thread() {
   };
   // nitka startuje u klubíčka a za cílem "dojíždí" pomalu (lerp) – při prvním scrollu se tak
   // pomaličku natáhne do základní polohy a dál plyne za scrollem
-  let cur = 0, started = false, running = false;
+  let cur = 0, started = false, scrolled = false, running = false;
   const tick = () => {
     const L = path.getTotalLength();
     if (!L) { running = false; return; }
     const target = started ? lengthAtY(L, scrollY + innerHeight * 0.75) : 0;
-    cur += (target - cur) * 0.04;
+    // před prvním scrollem jen pomaličku leze (konstantní tempo), pak normální dojíždění
+    if (scrolled) cur += (target - cur) * 0.04;
+    else cur = Math.min(target, cur + 0.9);
     if (Math.abs(target - cur) < 0.5) cur = target;
     path.style.strokeDashoffset = 1 - cur / L;
-    tieBow(L);
     if (cur !== target) requestAnimationFrame(tick); else running = false;
   };
-  const bowEls = { loops: document.querySelector('#thread-bow .bow-loops'), tails: document.querySelector('#thread-bow .bow-tails'), knot: document.querySelector('#thread-bow circle') };
-  const tieBow = (L) => {
-    if (!bowEls.loops) return;
-    const p = Math.max(0, Math.min(1, (cur - (L - 260)) / 260)); // zavazuje se během posledních ~260 px nitky
-    bowEls.loops.style.strokeDashoffset = 1 - Math.min(1, p / 0.65);            // nejdřív očka
-    bowEls.tails.style.strokeDashoffset = 1 - Math.max(0, (p - 0.65) / 0.35);   // pak konce
-    bowEls.knot.style.opacity = Math.max(0, (p - 0.85) / 0.15);                 // nakonec uzlík
-  };
   const draw = () => {
-    if (reduced) { path.style.strokeDashoffset = 0; cur = path.getTotalLength(); tieBow(cur); return; }
+    if (reduced) { path.style.strokeDashoffset = 0; return; }
     if (!running) { running = true; requestAnimationFrame(tick); }
   };
-  addEventListener('scroll', () => { started = true; }, { passive: true, once: true });
+  addEventListener('scroll', () => { started = true; scrolled = true; draw(); }, { passive: true, once: true });
+  setTimeout(() => { started = true; draw(); }, 2200); // rozjet hned po načtení (navazuje na scénku u klubíčka)
   addEventListener('scroll', draw, { passive: true });
   addEventListener('resize', layout);
   addEventListener('load', layout);
