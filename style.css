@@ -38,28 +38,6 @@ h2{font-size:clamp(2rem,4.2vw,3.2rem);color:var(--wine)}
 /* nitka na pozadí — tenká linka proplétající se stránkou, dokresluje se při scrollu (kreslí ji script.js) */
 .thread{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;overflow:visible}
 .thread path{fill:none;stroke:var(--wine);stroke-width:2.2;stroke-linecap:round;opacity:.36;stroke-dasharray:1;stroke-dashoffset:1}
-/* mašlička na konci nitky */
-/* háčky: pořád dokola dělají smyčku „zapíchnout – zachytit – protáhnout“ */
-.hooks path{fill:none;stroke:var(--wine);stroke-width:2.8;stroke-linecap:round;stroke-linejoin:round}
-.hooks circle{fill:var(--wine)}
-.hook{transform-box:fill-box;animation:knit-r 2.2s ease-in-out infinite}
-/* otočný bod = konec háčku zapíchnutý v klubku (lokální 0,0 = levý/pravý dolní roh bboxu) */
-/* pletení: pravá jehlice zajede špičkou k levé (do oka), omotá a vytáhne smyčku; levá drží a pak oko shodí krátkým švihem */
-.hook-a{transform-origin:0px 47px}
-.hook-b{transform-origin:34px 47px;animation-name:knit-l}
-@keyframes knit-r{
-  0%{transform:rotate(0) translate(0,0)}
-  30%{transform:rotate(-24deg) translate(-1px,2px)}   /* zapíchnout do oka na levé jehlici */
-  45%{transform:rotate(-28deg) translate(-2px,3px)}   /* omotat nit */
-  68%{transform:rotate(-10deg) translate(1px,-3px)}   /* vytáhnout smyčku nahoru */
-  100%{transform:rotate(0) translate(0,0)}
-}
-@keyframes knit-l{
-  0%,28%{transform:rotate(0) translate(0,0)}
-  45%{transform:rotate(4deg) translate(0,1px)}        /* lehce přidržet */
-  62%{transform:rotate(-5deg) translate(0,-2px)}      /* shodit oko */
-  78%,100%{transform:rotate(0) translate(0,0)}
-}
 main,.nav,.foot{position:relative;z-index:1}
 .nav{z-index:10}
 /* texty mají neprůhledný podklad, aby nitka za nimi nebyla vidět (fotky a karty ji kryjí samy) */
@@ -81,10 +59,10 @@ main,.nav,.foot{position:relative;z-index:1}
 .hero{display:flex;flex-direction:column;align-items:center;text-align:center;padding:clamp(3rem,7vw,5.5rem) var(--pad) clamp(2rem,4vw,3rem)}
 .wordmark img{width:min(64vw,380px);height:auto;margin:0 auto .4rem}
 .stitch{width:min(30vw,140px);height:auto;color:var(--wine);margin:.4rem auto 1.6rem;overflow:visible;opacity:.36}
-.stitch .ball circle{fill:var(--wine)}
-.stitch .ball path{fill:none;stroke:var(--cream);stroke-width:1.6;stroke-linecap:round;opacity:.55}
-.hooks path{stroke-width:3}
-.hooks .tip{stroke-width:1.7}
+/* klubko podle předlohy: obrys + návin nitě, pomalu se točí a nit se z něj odvíjí */
+.stitch .ball circle,.stitch .ball path{fill:none;stroke:var(--wine);stroke-width:2;stroke-linecap:round}
+.ball-rot{transform-box:fill-box;transform-origin:center;animation:spin 22s linear infinite}
+@keyframes spin{to{transform:rotate(-360deg)}}
 .stitch-thread{fill:none;stroke:var(--wine);stroke-width:2.05;stroke-linecap:butt}
 .hero-claim{max-width:56ch;font-size:clamp(1.05rem,1.5vw,1.25rem);color:var(--muted);margin-bottom:1.75rem;min-height:2.4em}
 .hero-claim .line{display:block;overflow:hidden}
@@ -94,8 +72,6 @@ main,.nav,.foot{position:relative;z-index:1}
 .wordmark img{clip-path:inset(0 100% 0 0);animation:stitch 1.1s var(--ease) .15s forwards}
 .stitch .ball{opacity:0;scale:.6;transform-box:fill-box;transform-origin:center;animation:pop .6s var(--ease) .7s forwards}
 .stitch-thread{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1s var(--ease) 1.2s forwards}
-.stitch .hooks{opacity:0;animation:fade .5s ease .9s forwards}
-@keyframes fade{to{opacity:1}}
 .hero-claim .line>span{translate:0 110%;animation:rise .8s var(--ease) 1.05s forwards}
 .hero-claim .line:nth-child(2)>span{animation-delay:1.15s}
 #hero-cta{opacity:0;scale:.9;animation:pop .7s var(--ease) 1.35s forwards}
@@ -188,8 +164,7 @@ section{padding:clamp(2.5rem,5vw,4.5rem) var(--pad);max-width:var(--max);margin:
 .reveal.in{opacity:1;translate:none}
 @media (prefers-reduced-motion:reduce){
   .reveal{opacity:1;translate:none;transition:none}
-  .wordmark img,.stitch .ball,.stitch-thread,.stitch .hooks,.hero-claim .line>span,#hero-cta{animation:none;clip-path:none;stroke-dashoffset:0;translate:none;opacity:1;scale:1}
+  .wordmark img,.stitch .ball,.stitch-thread,.ball-rot,.hero-claim .line>span,#hero-cta{animation:none;clip-path:none;stroke-dashoffset:0;translate:none;opacity:1;scale:1}
   .thread path{stroke-dashoffset:0}
-  .hook{animation:none}
   html{scroll-behavior:auto}
 }

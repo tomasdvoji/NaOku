@@ -30,17 +30,15 @@
 <main id="top">
   <section class="hero">
     <h1 class="wordmark"><img src="img/logo.png" alt="naOku – háčkování na zakázku" width="502" height="222" fetchpriority="high"></h1>
-    <svg class="stitch" viewBox="0 -34 130 76" aria-hidden="true">
-      <!-- háčky zapíchnuté v klubku: kreslí se před klubkem, aby je klubko zespodu překrylo -->
-      <g class="hooks" transform="translate(26 30)">
-        <g class="hook hook-a"><path d="M0 0 L29 -40"/><path class="tip" d="M29 -40 L34 -47"/></g>
-        <g class="hook hook-b"><path d="M0 0 L-29 -40"/><path class="tip" d="M-29 -40 L-34 -47"/></g>
-      </g>
+    <svg class="stitch" viewBox="0 6 130 50" aria-hidden="true">
       <g class="ball">
-        <circle cx="26" cy="30" r="16"/>
-        <path d="M13 24 q13 -8 26 0 M11 33 q15 -12 31 -2 M15 41 q12 -12 26 -5"/>
+        <g class="ball-rot">
+          <circle cx="26" cy="30" r="16"/>
+          <!-- návin: tři oblouky šikmo, dva křížem -->
+          <path d="M13.5 23 Q26 15.5 38.5 23 M11 33 Q26 21 40.5 31 M14.5 40 Q27 29 40 37.5 M20 16.7 Q13.5 30 20.6 43.7 M32 16.7 Q38.5 30 31.4 43.7"/>
+        </g>
       </g>
-      <path class="stitch-thread" d="M41 27 C 56 22, 70 34, 82 32 C 90 30.6, 94 30, 98 30" pathLength="1"/>
+      <path class="stitch-thread" d="M42 30 C 56 26, 70 34, 82 32 C 90 30.6, 94 30, 98 30" pathLength="1"/>
       <circle id="stitch-anchor" cx="98" cy="30" r="1" fill="none"/>
     </svg>
     <p class="hero-claim" id="hero-claim"></p>
