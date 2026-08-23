@@ -8,7 +8,7 @@
   --ink:#2B1B1F;
   --muted:#7A6A60;
 
-  --display:"Fraunces",Georgia,serif;
+  --display:"Shrikhand",Georgia,serif;
   --body:"Instrument Sans",system-ui,-apple-system,sans-serif;
 
   --pad:clamp(1.25rem,3.5vw,3.5rem);
@@ -31,13 +31,19 @@ body{
 }
 img{display:block;max-width:100%;height:auto}
 a{color:inherit;text-decoration:none}
-h1,h2,h3{font-family:var(--display);font-weight:900;font-style:italic;font-variation-settings:"SOFT" 100,"opsz" 144;line-height:1;letter-spacing:-.01em}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.05;letter-spacing:.01em}
 h2{font-size:clamp(2rem,4.2vw,3.2rem);color:var(--wine)}
 :focus-visible{outline:3px solid var(--wine);outline-offset:4px;border-radius:4px}
 
 /* nitka na pozadí — tenká linka proplétající se stránkou, dokresluje se při scrollu (kreslí ji script.js) */
 .thread{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;overflow:visible}
 .thread path{fill:none;stroke:var(--wine);stroke-width:2.2;stroke-linecap:round;opacity:.36;stroke-dasharray:1;stroke-dashoffset:1}
+/* mašlička na konci nitky */
+/* mašle se postupně "zavazuje" – kreslení řídí script.js podle posledního úseku nitky */
+#thread-bow{opacity:.45}
+#thread-bow path{fill:none;stroke:var(--wine);stroke-width:2.2;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;opacity:1}
+#thread-bow circle{fill:var(--wine);opacity:0}
+
 /* háčky: pořád dokola dělají smyčku „zapíchnout – zachytit – protáhnout“ */
 .hooks path{fill:none;stroke:var(--wine);stroke-width:2.8;stroke-linecap:round;stroke-linejoin:round}
 .hooks circle{fill:var(--wine)}
@@ -84,7 +90,7 @@ main,.nav,.foot{position:relative;z-index:1}
 .stitch .ball path{fill:none;stroke:var(--cream);stroke-width:1.6;stroke-linecap:round;opacity:.55}
 .hooks path{stroke-width:3}
 .hooks .tip{stroke-width:1.7}
-.stitch-thread{fill:none;stroke:var(--wine);stroke-width:2.2;stroke-linecap:butt}
+.stitch-thread{fill:none;stroke:var(--wine);stroke-width:2.05;stroke-linecap:butt}
 .hero-claim{max-width:56ch;font-size:clamp(1.05rem,1.5vw,1.25rem);color:var(--muted);margin-bottom:1.75rem;min-height:2.4em}
 .hero-claim .line{display:block;overflow:hidden}
 .hero-claim .line>span{display:block}
@@ -108,7 +114,7 @@ main,.nav,.foot{position:relative;z-index:1}
 .btn:hover{background:var(--wine-deep)}
 .btn--magnet{transition:translate .35s var(--ease),background .2s;will-change:translate}
 .btn--magnet>span{display:inline-block;transition:translate .35s var(--ease)}
-.btn--big{font-family:var(--display);font-style:italic;font-weight:900;font-variation-settings:"SOFT" 100;font-size:clamp(1.3rem,2.6vw,1.9rem);padding:1rem 2.3rem}
+.btn--big{font-family:var(--display);font-weight:400;font-size:clamp(1.3rem,2.6vw,1.9rem);padding:1rem 2.3rem}
 
 /* layout */
 section{padding:clamp(2.5rem,5vw,4.5rem) var(--pad);max-width:var(--max);margin:0 auto;scroll-margin-top:4.5rem}
@@ -157,8 +163,8 @@ section{padding:clamp(2.5rem,5vw,4.5rem) var(--pad);max-width:var(--max);margin:
 .postup h2{margin-bottom:clamp(1.2rem,2.5vw,1.8rem)}
 .kroky{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gap)}
 .kroky li{background:var(--oat);border-radius:var(--r);padding:1.6rem 1.4rem 1.8rem}
-.krok-n{font-family:var(--display);font-style:italic;font-weight:900;font-variation-settings:"SOFT" 100;font-size:2.6rem;color:var(--wine);line-height:1;display:block;margin-bottom:.6rem}
-.kroky h3{font-size:1.2rem;color:var(--ink);margin-bottom:.5rem;font-variation-settings:"SOFT" 100,"opsz" 48}
+.krok-n{font-family:var(--display);font-weight:400;font-size:2.6rem;color:var(--wine);line-height:1;display:block;margin-bottom:.6rem}
+.kroky h3{font-size:1.15rem;color:var(--ink);margin-bottom:.5rem}
 .kroky p{color:var(--muted);font-size:.95rem}
 @media (max-width:720px){.kroky{grid-template-columns:1fr}}
 
@@ -175,7 +181,7 @@ section{padding:clamp(2.5rem,5vw,4.5rem) var(--pad);max-width:var(--max);margin:
 .about-img{border-radius:var(--r);overflow:hidden;background:var(--oat)}
 .about-text p{color:var(--muted);margin:1rem 0 1.6rem;max-width:56ch}
 .stats{list-style:none;display:grid;grid-template-columns:repeat(4,auto);gap:1rem 1.6rem;justify-content:start}
-.stats b{display:block;font-family:var(--display);font-style:italic;font-weight:900;font-variation-settings:"SOFT" 100;font-size:clamp(1.6rem,3vw,2.3rem);color:var(--wine);line-height:1}
+.stats b{display:block;font-family:var(--display);font-weight:400;font-size:clamp(1.6rem,3vw,2.3rem);color:var(--wine);line-height:1}
 .stats span{font-size:.85rem;color:var(--muted)}
 @media (max-width:720px){.about{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,auto)}}
 

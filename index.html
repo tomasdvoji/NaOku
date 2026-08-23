@@ -11,7 +11,7 @@
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@1,9..144,900,100&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <link rel="preload" as="fetch" href="content/site.json" crossorigin>
 </head>
@@ -19,6 +19,12 @@
 
 <svg class="thread" aria-hidden="true">
   <path id="thread-path" pathLength="1"/>
+  <!-- mašlička na konci nitky – ukáže se, když nitka dojede na konec trasy -->
+  <g id="thread-bow">
+    <path class="bow-loops" d="M0 1 C -16 -10, -26 6, -1 6 M0 1 C 16 -10, 26 6, 1 6" pathLength="1"/>
+    <path class="bow-tails" d="M-1 4 C -5 12, -9 17, -13 23 M1 4 C 5 12, 9 17, 11 23" pathLength="1"/>
+    <circle cx="0" cy="3" r="2.6"/>
+  </g>
 </svg>
 
 <header class="nav">
@@ -40,7 +46,7 @@
         <circle cx="26" cy="30" r="16"/>
         <path d="M13 24 q13 -8 26 0 M11 33 q15 -12 31 -2 M15 41 q12 -12 26 -5"/>
       </g>
-      <path class="stitch-thread" d="M41 27 C 56 22, 74 34, 98 30" pathLength="1"/>
+      <path class="stitch-thread" d="M41 27 C 56 22, 70 34, 82 32 C 90 30.6, 94 30, 98 30" pathLength="1"/>
       <circle id="stitch-anchor" cx="98" cy="30" r="1" fill="none"/>
     </svg>
     <p class="hero-claim" id="hero-claim"></p>

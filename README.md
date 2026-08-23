@@ -30,6 +30,13 @@ zobrazují se v původním poměru stran.
 ## Fotky z Instagramu
 `img/ig/` (ignorováno gitem) = originály stažené z IG, `img/w/` = zmenšené verze použité na webu (čtverce 800 px, tašky 1000 px, hero 2000 px).
 
-## Deploy (Cloudflare Pages)
+## Deploy
+
+### GitHub Pages (zapnuté)
+V repu je workflow `.github/workflows/pages.yml` – každý push do `main` web automaticky nasadí.
+Jednorázově zapni: GitHub → repo **NaOku** → **Settings → Pages → Source: GitHub Actions**.
+Web pak běží na `https://tomasdvoji.github.io/NaOku/` (funguje i v podadresáři – všechny cesty jsou relativní).
+
+### Cloudflare Pages (alternativa)
 Workers & Pages → Create → Pages → Connect to Git → tohle repo.
 Build command: *(prázdné)*, Build output directory: `/`. Hotovo.
