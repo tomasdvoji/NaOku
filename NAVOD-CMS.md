@@ -1,18 +1,18 @@
-# naOku – návod, jak si upravit web
+# naOku – návod, jak si upravíš web
 
-Web se upravuje přes **Pages CMS** na adrese **https://app.pagescms.org**.
-Nepotřebuješ nic instalovat ani umět programovat. Funguje na počítači i v mobilu.
+Ahoj Kačko! Web si upravuješ sama přes **Pages CMS** na adrese **https://app.pagescms.org**.
+Nemusíš nic instalovat ani umět programovat. Funguje na počítači i v mobilu.
 
 ---
 
-## 1. Přihlášení (Kačka)
+## 1. Přihlášení
 
 1. Otevři **https://app.pagescms.org**.
 2. Klikni na přihlášení **e‑mailem** a zadej e‑mail, na který ti přišla pozvánka.
 3. Přijde ti e‑mail s odkazem/kódem – klikni na něj (nebo kód opiš). Žádné heslo není potřeba.
-4. V seznamu uvidíš repozitář **NaOku** – otevři ho. Vlevo je položka **Web naOku** – to je celý obsah webu.
+4. V seznamu uvidíš **NaOku** – otevři ho. Vlevo je položka **Web naOku** – to je celý obsah webu.
 
-> Nemáš pozvánku? Napiš Tomášovi, pošle ti ji (viz část pro Tomáše dole).
+> Nepřišla ti pozvánka? Napiš Tomášovi, pošle ti novou.
 
 ---
 
@@ -23,7 +23,7 @@ Po otevření **Web naOku** vidíš formulář rozdělený na části (jdou rozk
 | Část | Co ovládá |
 |---|---|
 | **Úvod** | text pod logem, text tlačítka, velká fotka nahoře + její popisek, 8 fotek pod ní („showcase“) |
-| **Sekce produktů** | Tašky, Kapuce & balaclavy, Čepice, Rukavice, Hračky…, každá má název, popis, cenové štítky a fotky |
+| **Sekce produktů** | Tašky, Kapuce & balaclavy, Čepice, Rukavice, Hračky – každá má název, popis, cenové štítky a fotky |
 | **O mně** | fotka, text o tobě, čtyři čísla (90+ projektů apod.) |
 | **Ceník** | nadpis, poznámka, položky s cenou |
 | **Jak to probíhá** | tři kroky |
@@ -61,7 +61,11 @@ Po otevření **Web naOku** vidíš formulář rozdělený na části (jdou rozk
 3. **Save**. Sekce se na webu objeví na místě, kde je v seznamu (pořadí jde přetáhnout).
    První čtyři sekce se zároveň ukazují v horním menu.
 
-### Změnit velkou fotku nahoře nebo fotek pod ní
+### Smazat sekci
+**Sekce produktů** → u sekce klikni na tři tečky / křížek → smazat → **Save**.
+Kdyby ses spletla, dá se všechno vrátit – nic není nenávratně pryč.
+
+### Změnit velkou fotku nahoře nebo fotky pod ní
 **Úvod** → **Velká fotka** (vyber/nahraj) + **Popis** a **Štítek na fotce**; **Výběr fotek pod úvodem** = 8 fotek, nejlíp s lidmi.
 
 ### Upravit „O mně“
@@ -74,16 +78,5 @@ Po otevření **Web naOku** vidíš formulář rozdělený na části (jdou rozk
 - **Save = zveřejnit.** Každé uložení se hned propíše na web (cca 1–2 minuty). Pokud něco pokazíš, klidně to přepiš zpátky a znovu ulož – nic se neztratí, všechny verze jsou uložené v historii.
 - Na webu to **neuvidíš hned**: dej na webu **Obnovit** (na mobilu stáhnout stránku dolů), případně počkej minutu.
 - Změny z mobilu fungují stejně jako z počítače.
-- Pole **ID** u sekcí neměň u existujících sekcí (jsou na ně odkazy v menu).
-
----
-
-## 5. Jednorázové nastavení (Tomáš)
-
-1. Přihlas se na https://app.pagescms.org svým **GitHubem** a nainstaluj **Pages CMS GitHub App** na repo `tomasdvoji/NaOku`
-   (při prvním otevření tě to samo vyzve; app potřebuje přístup jen k tomuto repu).
-2. Otevři repo v Pages CMS → ozubené kolo **Settings** → **Collaborators** → **Invite** → Kaččin e‑mail.
-3. Ona dostane pozvánku a dál už jede podle části 1.
-4. Web je na Cloudflare Pages napojený na repo → každý commit z CMS = automatický deploy.
-
-Konfigurace editoru je v souboru `.pages.yml`, obsah webu v `content/site.json`, nahrané fotky v `img/uploads/`.
+- Pole **ID** u existujících sekcí neměň (jsou na ně odkazy v menu).
+- Když si nebudeš vědět rady nebo se něco rozbije, napiš Tomášovi – všechno jde vrátit.
