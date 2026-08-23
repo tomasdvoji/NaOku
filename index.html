@@ -32,15 +32,8 @@
     <h1 class="wordmark"><img src="img/logo.png" alt="naOku – háčkování na zakázku" width="502" height="222" fetchpriority="high"></h1>
     <svg class="stitch" viewBox="0 2 130 48" aria-hidden="true">
       <g class="ball">
-        <!-- hacek propichnuty sikmo skrz klubko (staticky, kresli se pod navinem) -->
-        <path class="hook" d="M14 45.5 L43.5 15 M43.5 15 Q46.5 11.8 45.2 9.2 Q44.2 7.4 42.2 8.2"/>
-        <!-- klubko: sikmy navin se pomalu toci, jediny volny konec = nit doprava -->
-        <g class="ball-rot">
-          <g transform="rotate(-32 30 28)">
-            <circle cx="30" cy="28" r="15"/>
-            <path d="M16.8 21 Q30 12.5 43.2 21 M15.1 30 Q30 17 44.9 30 M17.5 37.5 Q30 26 42.5 37.5 M24 14.2 Q15.5 28 24 41.8 M36 14.2 Q44.5 28 36 41.8"/>
-          </g>
-        </g>
+        <!-- ponytail: klubko = dodane PNG (prekresleno na vinovou, orezany provazek); stred klubka je presne stred obrazku, takze rotace sedi -->
+        <image class="ball-rot" href="img/klubko.png" x="6.8" y="4.8" width="46.4" height="46.4"/>
       </g>
       <path class="stitch-thread" d="M45 28 C 58 26.5, 70 30.5, 80 30.2 C 87 30, 93 30, 98 30" pathLength="1"/>
       <circle id="stitch-anchor" cx="98" cy="30" r="1" fill="none"/>

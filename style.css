@@ -58,13 +58,12 @@ main,.nav,.foot{position:relative;z-index:1}
 /* hero */
 .hero{display:flex;flex-direction:column;align-items:center;text-align:center;padding:clamp(3rem,7vw,5.5rem) var(--pad) clamp(2rem,4vw,3rem)}
 .wordmark img{width:min(64vw,380px);height:auto;margin:0 auto .4rem}
-.stitch{width:min(30vw,140px);height:auto;color:var(--wine);margin:.4rem auto 1.6rem;overflow:visible;opacity:.36}
-/* klubko podle předlohy: obrys + návin nitě, pomalu se točí a nit se z něj odvíjí */
-.stitch .hook{fill:none;stroke:var(--wine);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
-.stitch .ball circle,.stitch .ball path{fill:none;stroke:var(--wine);stroke-width:2;stroke-linecap:round}
+.stitch{width:min(30vw,140px);height:auto;color:var(--wine);margin:.4rem auto 1.6rem;overflow:visible}
+/* klubko (PNG) se pomalu točí a nit se z něj odvíjí; nit drží 36 % jako nit na pozadí, klubko je výraznější */
+.ball-rot{opacity:.55}
 .ball-rot{transform-box:fill-box;transform-origin:center;animation:spin 22s linear infinite}
 @keyframes spin{to{transform:rotate(-360deg)}}
-.stitch-thread{fill:none;stroke:var(--wine);stroke-width:2.05;stroke-linecap:butt}
+.stitch-thread{fill:none;stroke:var(--wine);stroke-width:2.05;stroke-linecap:butt;opacity:.36}
 .hero-claim{max-width:56ch;font-size:clamp(1.05rem,1.5vw,1.25rem);color:var(--muted);margin-bottom:1.75rem;min-height:2.4em}
 .hero-claim .line{display:block;overflow:hidden}
 .hero-claim .line>span{display:block}
