@@ -1,10 +1,10 @@
 /* naOku — tokens */
 :root{
-  --cream:#FFF6E5;
+  --cream:#FFF6E7;
   --oat:#F4E8D2;
   --sand:#D9C3A5;
-  --wine:#A3264F;
-  --wine-deep:#7E1B3C;
+  --wine:#AF2D53;
+  --wine-deep:#8A2040;
   --ink:#2B1B1F;
   --muted:#7A6A60;
 
@@ -49,13 +49,12 @@ main{position:relative;z-index:1}
 
 /* hero */
 .hero{position:relative;min-height:calc(100svh - 4rem);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:4rem var(--pad) 6rem}
-.wordmark{display:flex;flex-direction:column;align-items:center;transform:rotate(var(--tilt));margin-bottom:1.25rem}
-.wordmark img{width:min(62vw,640px);height:auto}
-.wordmark-text{display:none;font-size:clamp(4.5rem,16vw,13rem);color:var(--wine);letter-spacing:.08em;line-height:1}
+.wordmark{display:flex;flex-direction:column;align-items:center;margin-bottom:2.5rem}
+.wordmark img{width:min(70vw,560px);height:auto}
+.wordmark-text{display:none;transform:rotate(var(--tilt));font-size:clamp(4.5rem,16vw,13rem);color:var(--wine);letter-spacing:.08em;line-height:1}
 .wordmark-text em{font-style:inherit;letter-spacing:0}
 .wordmark.no-logo img{display:none}
 .wordmark.no-logo .wordmark-text{display:block}
-.hero-sub{font-family:var(--display);font-style:italic;font-weight:900;font-variation-settings:"SOFT" 100;color:var(--wine);font-size:clamp(1.1rem,2.2vw,1.5rem);transform:rotate(var(--tilt)) translateX(3ch);margin-bottom:2.5rem}
 .hero-claim{max-width:38ch;font-size:clamp(1.05rem,1.6vw,1.3rem);color:var(--muted);margin-bottom:2rem}
 
 .hero-photo{position:absolute;width:clamp(120px,16vw,240px);aspect-ratio:4/5;padding:.6rem .6rem 2.2rem;background:#fff;box-shadow:0 18px 40px -18px rgba(43,27,31,.35);z-index:-1}
