@@ -1,0 +1,146 @@
+# Pages CMS (app.pagescms.org) — editace obsahu webu naOku
+media:
+  input: img
+  output: img
+  extensions: [jpg, jpeg, png, webp]
+  rename: safe
+
+components:
+  fotka:
+    type: object
+    label: Fotka
+    fields:
+      - name: image
+        label: Obrázek
+        type: image
+        required: true
+        options:
+          path: img/uploads
+      - name: alt
+        label: Popis (co je na fotce)
+        type: string
+      - name: link
+        label: Odkaz (např. na příspěvek na Instagramu)
+        type: string
+  cena:
+    type: object
+    label: Cena
+    fields:
+      - name: name
+        label: Produkt
+        type: string
+      - name: price
+        label: Cena
+        type: string
+
+content:
+  - name: web
+    label: Web naOku
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: hero
+        label: Úvod
+        type: object
+        fields:
+          - { name: claim, label: Úvodní text (2 řádky), type: text }
+          - { name: cta, label: Text tlačítka, type: string }
+          - name: photo
+            label: Velká fotka
+            type: image
+            options: { path: img/uploads }
+          - { name: photo_alt, label: Popis velké fotky, type: string }
+          - { name: photo_caption, label: Štítek na fotce, type: string }
+          - { name: photo_link, label: Odkaz z fotky, type: string }
+          - name: showcase
+            label: Výběr fotek pod úvodem (8 ks, nejlépe čtvercové)
+            component: fotka
+            list:
+              collapsible: { collapsed: true, summary: "{alt}" }
+
+      - name: sections
+        label: Sekce produktů
+        type: object
+        list:
+          collapsible: { collapsed: true, summary: "{title}" }
+        fields:
+          - { name: id, label: ID (bez mezer a diakritiky, např. tasky), type: string, pattern: "^[a-z0-9-]+$" }
+          - { name: title, label: Název, type: string, required: true }
+          - { name: desc, label: Popis, type: text }
+          - name: prices
+            label: Cenové štítky (může zůstat prázdné = „cena po dohodě“)
+            component: cena
+            list: true
+          - name: items
+            label: Fotky
+            component: fotka
+            list:
+              collapsible: { collapsed: true, summary: "{alt}" }
+          - name: items2
+            label: Druhá řada fotek (volitelné)
+            component: fotka
+            list:
+              collapsible: { collapsed: true, summary: "{alt}" }
+
+      - name: about
+        label: O mně
+        type: object
+        fields:
+          - { name: title, label: Nadpis, type: string }
+          - { name: text, label: Text, type: text }
+          - name: image
+            label: Fotka
+            type: image
+            options: { path: img/uploads }
+          - { name: image_alt, label: Popis fotky, type: string }
+          - name: stats
+            label: Čísla
+            type: object
+            list: true
+            fields:
+              - { name: value, label: Hodnota, type: string }
+              - { name: label, label: Popisek, type: string }
+
+      - name: cenik
+        label: Ceník
+        type: object
+        fields:
+          - { name: title, label: Nadpis, type: string }
+          - { name: note, label: Poznámka, type: text }
+          - name: rows
+            label: Položky
+            component: cena
+            list: true
+
+      - name: postup
+        label: Jak to probíhá
+        type: object
+        fields:
+          - { name: title, label: Nadpis, type: string }
+          - name: steps
+            label: Kroky
+            type: object
+            list: true
+            fields:
+              - { name: title, label: Nadpis kroku, type: string }
+              - { name: text, label: Text, type: text }
+
+      - name: cta
+        label: Výzva na konci
+        type: object
+        fields:
+          - { name: eyebrow, label: Malý text, type: string }
+          - { name: button, label: Text tlačítka, type: string }
+
+      - name: footer
+        label: Patička
+        type: object
+        fields:
+          - { name: left, label: Text vlevo, type: string }
+          - { name: author_handle, label: Autor – jméno/handle, type: string }
+          - { name: author_link, label: Autor – odkaz, type: string }
+          - { name: right, label: Text vpravo, type: string }
+
+      - { name: instagram, label: Odkaz na Instagram, type: string }
+      - { name: handle, label: Instagram handle, type: string }

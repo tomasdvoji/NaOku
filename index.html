@@ -4,101 +4,54 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>naOku — háčkování na zakázku</title>
-<meta name="description" content="naOku – háčkování z přírodních materiálů na zakázku. Tašky, kapuce, nákrčníky, hračky. Přijď i s vlastní představou.">
+<meta name="description" content="naOku – háčkování z přírodních materiálů na zakázku. Tašky, Sophie hood, balaclavy, čepice, rukavice, hračky, girlandy. Přijď i s vlastní představou.">
 <meta property="og:title" content="naOku — háčkování na zakázku">
-<meta property="og:description" content="Háčkování z přírodních materiálů. Tašky, kapuce, hračky – i podle tvé představy.">
-<meta property="og:image" content="img/sitovka-cervena.jpg">
+<meta property="og:description" content="Háčkování z přírodních materiálů. Tašky, kapuce, čepice, hračky – i podle tvé představy.">
+<meta property="og:image" content="img/w/hero-01.jpg">
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@1,9..144,900,100&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="preload" as="fetch" href="content/site.json" crossorigin>
 </head>
 <body>
 
-<svg class="yarn" aria-hidden="true"><path id="yarn-path" /></svg>
+<svg class="thread" aria-hidden="true">
+  <path id="thread-path" pathLength="1"/>
+</svg>
 
 <header class="nav">
-  <a class="nav-brand" href="#top">naOku</a>
-  <a class="nav-ig" href="https://www.instagram.com/_naoku__/" target="_blank" rel="noopener">@_naoku__ <span aria-hidden="true">↗</span></a>
+  <a class="nav-brand" href="#top"><img src="img/logo.png" alt="naOku" width="502" height="222"></a>
+  <nav class="nav-links" id="nav-links"></nav>
+  <a class="nav-ig" id="nav-ig" href="https://www.instagram.com/_naoku__/" target="_blank" rel="noopener">@_naoku__ <span aria-hidden="true">↗</span></a>
 </header>
 
 <main id="top">
-
   <section class="hero">
-    <figure class="hero-photo hero-photo--l reveal"><img src="img/nakrcnik.jpg" alt="Háčkovaný nákrčník v písčité barvě" loading="eager"></figure>
-    <figure class="hero-photo hero-photo--r reveal"><img src="img/girlanda-teo.jpg" alt="Háčkovaná girlanda se jménem Teo a hrošíkem" loading="eager"></figure>
-
-    <h1 class="wordmark">
-      <!-- ponytail: PNG 502px z IG; až bude SVG, jen přepsat src -->
-      <img src="img/logo.png" alt="naOku – háčkování na zakázku" width="502" height="222" onerror="this.parentNode.classList.add('no-logo')">
-      <span class="wordmark-text" aria-hidden="true">na<em>O</em>ku</span>
-    </h1>
-    <p class="hero-claim">Z přírodních materiálů, ručně, kousek po kousku. <br>Nebojte se přijít i s vlastní představou.</p>
-    <a class="btn" href="https://www.instagram.com/_naoku__/" target="_blank" rel="noopener">Napsat na Instagram</a>
+    <h1 class="wordmark"><img src="img/logo.png" alt="naOku – háčkování na zakázku" width="502" height="222" fetchpriority="high"></h1>
+    <svg class="stitch" viewBox="0 -34 130 76" aria-hidden="true">
+      <!-- háčky zapíchnuté v klubku: kreslí se před klubkem, aby je klubko zespodu překrylo -->
+      <g class="hooks" transform="translate(26 30)">
+        <g class="hook hook-a"><path d="M0 0 L29 -40"/><path class="tip" d="M29 -40 L34 -47"/></g>
+        <g class="hook hook-b"><path d="M0 0 L-29 -40"/><path class="tip" d="M-29 -40 L-34 -47"/></g>
+      </g>
+      <g class="ball">
+        <circle cx="26" cy="30" r="16"/>
+        <path d="M13 24 q13 -8 26 0 M11 33 q15 -12 31 -2 M15 41 q12 -12 26 -5"/>
+      </g>
+      <path class="stitch-thread" d="M41 27 C 56 22, 74 34, 98 30" pathLength="1"/>
+      <circle id="stitch-anchor" cx="98" cy="30" r="1" fill="none"/>
+    </svg>
+    <p class="hero-claim" id="hero-claim"></p>
+    <a class="btn btn--magnet" id="hero-cta" href="https://www.instagram.com/_naoku__/" target="_blank" rel="noopener"><span></span></a>
   </section>
 
-  <div class="band" aria-hidden="true">
-    <div class="band-track">
-      <span>háčkování na zakázku · z přírodních materiálů · tašky · kapuce · nákrčníky · hračky · girlandy · </span><span>háčkování na zakázku · z přírodních materiálů · tašky · kapuce · nákrčníky · hračky · girlandy · </span>
-    </div>
-  </div>
-
-  <section class="kolekce" id="kolekce">
-    <h2 class="reveal">Co háčkuju</h2>
-    <div class="tiles">
-      <a class="tile tile--tall reveal" href="https://www.instagram.com/_naoku__/reel/DcTyKfeqy5f/" target="_blank" rel="noopener">
-        <img src="img/piknik-tasky.jpg" alt="Piknik s háčkovanými síťovkami" loading="lazy">
-        <span class="tile-label"><strong>Tašky</strong><small>síťovky, nákupky, letní dropy</small></span>
-      </a>
-      <a class="tile reveal" href="https://www.instagram.com/_naoku__/p/DWJjWADgvsO/" target="_blank" rel="noopener">
-        <img src="img/kapuce-portret.jpg" alt="Háčkovaná kapuce s nákrčníkem na modelce" loading="lazy">
-        <span class="tile-label"><strong>Kapuce &amp; nákrčníky</strong><small>sophie hood, šály, čelenky</small></span>
-      </a>
-      <a class="tile reveal" href="https://www.instagram.com/_naoku__/p/DWb5Ag-AiUS/" target="_blank" rel="noopener">
-        <img src="img/hracky-trio.jpg" alt="Tři háčkované hračky – tygr, hroch a lev" loading="lazy">
-        <span class="tile-label"><strong>Hračky &amp; dekorace</strong><small>zvířátka, girlandy se jménem</small></span>
-      </a>
-    </div>
-  </section>
-
-  <section class="galerie" id="galerie">
-    <h2 class="reveal">Z dílny</h2>
-    <p class="galerie-sub reveal">Výběr toho, co poslední dobou vzniklo. Kliknutím otevřeš příspěvek na Instagramu.</p>
-    <div class="grid">
-      <a class="shot reveal" href="https://www.instagram.com/_naoku__/p/DcTt5hlgk6h/" target="_blank" rel="noopener"><img src="img/sitovka-cervena.jpg" alt="Červená síťovka – sip, carry, repeat" loading="lazy"></a>
-      <a class="shot reveal" href="https://www.instagram.com/_naoku__/p/DcJmOsoKGiS/" target="_blank" rel="noopener"><img src="img/bag-drop.jpg" alt="Late summer bag drop – cocktails edition" loading="lazy"></a>
-      <a class="shot reveal" href="https://www.instagram.com/_naoku__/p/DXr55ScAnoF/" target="_blank" rel="noopener"><img src="img/kapuce-selfie.jpg" alt="Čtyři selfie v háčkované kapuci" loading="lazy"></a>
-      <a class="shot reveal" href="https://www.instagram.com/_naoku__/p/DatC86Mik-z/" target="_blank" rel="noopener"><img src="img/girlanda-teo.jpg" alt="Girlanda Teo s hrošíkem a slůnětem" loading="lazy"></a>
-      <a class="shot reveal" href="https://www.instagram.com/_naoku__/reel/DXj0hFJCL_0/" target="_blank" rel="noopener"><img src="img/kapuce-slozena.jpg" alt="Složená háčkovaná kapuce s etiketou" loading="lazy"></a>
-      <a class="shot reveal" href="https://www.instagram.com/_naoku__/p/DVV5hOwAuy7/" target="_blank" rel="noopener"><img src="img/nakrcnik.jpg" alt="Háčkovaný nákrčník" loading="lazy"></a>
-      <a class="shot reveal" href="https://www.instagram.com/_naoku__/reel/DcTyKfeqy5f/" target="_blank" rel="noopener"><img src="img/piknik-tasky.jpg" alt="Piknik s háčkovanými taškami" loading="lazy"></a>
-      <a class="shot reveal" href="https://www.instagram.com/_naoku__/p/DT26eZUAmCb/" target="_blank" rel="noopener"><img src="img/stitky.jpg" alt="Našívací štítky naOku" loading="lazy"></a>
-    </div>
-    <a class="link-more reveal" href="https://www.instagram.com/_naoku__/" target="_blank" rel="noopener">Všech 80+ příspěvků na Instagramu ↗</a>
-  </section>
-
-  <section class="postup" id="postup">
-    <h2 class="reveal">Jak to probíhá</h2>
-    <ol class="kroky">
-      <li class="reveal"><span class="krok-n">1</span><h3>Napíšeš, co tě napadá</h3><p>Taška na léto, kapuce na zimu, hračka pro miminko, nebo něco, co ještě nikdo nemá. Klidně jen fotka pro inspiraci.</p></li>
-      <li class="reveal"><span class="krok-n">2</span><h3>Domluvíme materiál a barvu</h3><p>Háčkuju z bavlny, lnu a vlny. Pošlu ukázky přízí, vybereš, poradím, co se k čemu hodí.</p></li>
-      <li class="reveal"><span class="krok-n">3</span><h3>Uháčkuju a pošlu</h3><p>Každý kus vzniká ručně, takže počítej s pár týdny. Cestou ti ukážu, jak roste.</p></li>
-    </ol>
-  </section>
-
-  <section class="cta">
-    <p class="cta-eyebrow reveal">Objednávky jdou přes zprávy na Instagramu</p>
-    <h2 class="cta-title reveal">Napiš <em>mi</em></h2>
-    <a class="btn btn--big reveal" href="https://www.instagram.com/_naoku__/" target="_blank" rel="noopener">@_naoku__ ↗</a>
-  </section>
-
+  <div id="content"></div>
+  <noscript><p style="padding:2rem;text-align:center">Pro zobrazení webu zapni JavaScript, nebo napiš přímo na <a href="https://www.instagram.com/_naoku__/">Instagram @_naoku__</a>.</p></noscript>
 </main>
 
-<footer class="foot">
-  <span>© <span id="rok">2026</span> naOku · Kačka <a href="https://www.instagram.com/kackastr_/" target="_blank" rel="noopener">@kackastr_</a></span>
-  <span>háčkování na zakázku</span>
-</footer>
+<footer class="foot" id="foot"></footer>
 
 <script src="script.js" defer></script>
 </body>
