@@ -135,7 +135,8 @@
         {
           "name": "Balaclava · merino/alpaca",
           "price": "1 300 Kč"
-        }
+        },
+        {}
       ],
       "items": [
         {
@@ -177,9 +178,11 @@
           "image": "img/w/kapuce-08.jpg",
           "alt": "Smetanová balaclava",
           "link": "https://www.instagram.com/_naoku__/p/DFacJb3sjfL/"
+        },
+        {
+          "image": "img/uploads/laska.png"
         }
-      ],
-      "items2": []
+      ]
     },
     {
       "id": "cepice",
@@ -236,8 +239,7 @@
           "alt": "Černá čepice",
           "link": "https://www.instagram.com/_naoku__/p/DTp7OYtArfN/"
         }
-      ],
-      "items2": []
+      ]
     },
     {
       "id": "rukavice",
@@ -274,14 +276,12 @@
           "alt": "Bezprstové rukavičky",
           "link": "https://www.instagram.com/_naoku__/p/DE5gyvuOtFU/"
         }
-      ],
-      "items2": []
+      ]
     },
     {
       "id": "hracky",
       "title": "Hračky, girlandy & řetízky",
       "desc": "Zvířátka, girlandy se jménem, řetízky na kočárek a chrastítka pro miminka. Dárek, který zůstane.",
-      "prices": [],
       "items": [
         {
           "image": "img/w/hracky-01.jpg",
@@ -323,14 +323,12 @@
           "alt": "Barevné bambulky v košíčku",
           "link": "https://www.instagram.com/_naoku__/p/DCj5Lm7uUZN/"
         }
-      ],
-      "items2": []
+      ]
     },
     {
       "id": "kvetiny",
       "title": "Květiny & dekorace",
       "desc": "Kytice, které vydrží navždy – tulipány, hortenzie, růže. Custom pugety na svatbu i do salonku.",
-      "prices": [],
       "items": [
         {
           "image": "img/w/kvetiny-01.jpg",
@@ -352,14 +350,12 @@
           "alt": "Kytice s růžemi",
           "link": "https://www.instagram.com/_naoku__/p/DKNKuuvM5Mr/"
         }
-      ],
-      "items2": []
+      ]
     },
     {
       "id": "obleceni",
       "title": "Oblečení na přání",
       "desc": "Topy, síťované šaty, svetry, vesty i dětské soupravy. Napiš, co nosíš – domluvíme střih, přízi a barvu.",
-      "prices": [],
       "items": [
         {
           "image": "img/w/obleceni-01.jpg",
@@ -401,8 +397,7 @@
           "alt": "Dětské ponožky",
           "link": "https://www.instagram.com/_naoku__/p/C3ZzBXcsoLh/"
         }
-      ],
-      "items2": []
+      ]
     }
   ],
   "about": {
