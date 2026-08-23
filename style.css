@@ -60,6 +60,7 @@ main,.nav,.foot{position:relative;z-index:1}
 .wordmark img{width:min(64vw,380px);height:auto;margin:0 auto .4rem}
 .stitch{width:min(30vw,140px);height:auto;color:var(--wine);margin:.4rem auto 1.6rem;overflow:visible;opacity:.36}
 /* klubko podle předlohy: obrys + návin nitě, pomalu se točí a nit se z něj odvíjí */
+.stitch .hook{fill:none;stroke:var(--wine);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
 .stitch .ball circle,.stitch .ball path{fill:none;stroke:var(--wine);stroke-width:2;stroke-linecap:round}
 .ball-rot{transform-box:fill-box;transform-origin:center;animation:spin 22s linear infinite}
 @keyframes spin{to{transform:rotate(-360deg)}}
