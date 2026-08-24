@@ -1,6 +1,6 @@
 {
   "hero": {
-    "claim": "Háčkování z přírodních materiálů, ručně, kousek po kousku.\nNebojte se přijít i s vlastní představou.",
+    "claim": "Háčkování z přírodních materiálů, kousek po kousku s láskou a péčí.\n",
     "cta": "Napsat na Instagram",
     "photo": "img/w/hero-01.jpg",
     "photo_alt": "Piknik s háčkovanými taškami – late summer bag drop",
@@ -13,39 +13,32 @@
         "link": "https://www.instagram.com/_naoku__/p/DWJjWADgvsO/"
       },
       {
-        "image": "img/w/showcase-02.jpg",
-        "alt": "Pruhovaná balaclava",
-        "link": "https://www.instagram.com/_naoku__/p/DRZgRVZgmx8/"
+        "image": "img/uploads/fa67a4da-a8f7-4194-8d8e-80711eeed6da.jpeg",
+        "alt": "Sophie hood z alpaky - smetanová"
       },
       {
-        "image": "img/w/showcase-03.jpg",
-        "alt": "Huňatá Sophie hood z alpaky",
-        "link": "https://www.instagram.com/_naoku__/p/DTfvZ7KAmpt/"
+        "image": "img/uploads/img5358.jpeg",
+        "alt": "Zvířátka - trio"
       },
       {
-        "image": "img/w/showcase-04.jpg",
-        "alt": "Růžová merino čepice",
-        "link": "https://www.instagram.com/_naoku__/p/DCeNXUwI3a8/"
+        "image": "img/uploads/img4682.jpeg",
+        "alt": "Taška 01 - mojito"
       },
       {
-        "image": "img/w/showcase-05.jpg",
-        "alt": "Bílá čepice",
-        "link": "https://www.instagram.com/_naoku__/p/DEZyQ1aMflq/"
+        "image": "img/uploads/c0967972-a73d-4b24-b0bb-237053594418.jpeg",
+        "alt": "Balaclava z merina - šalvějová"
       },
       {
-        "image": "img/w/showcase-06.jpg",
-        "alt": "Bílá Sophie hood",
-        "link": "https://www.instagram.com/_naoku__/p/DFacJb3sjfL/"
+        "image": "img/uploads/img5363-1.jpeg",
+        "alt": "Řetízek - sloníci"
       },
       {
-        "image": "img/w/showcase-07.jpg",
-        "alt": "Bílý háčkovaný top",
-        "link": "https://www.instagram.com/_naoku__/p/DL4b8VwN63R/"
+        "image": "img/uploads/img5356.jpeg",
+        "alt": "Balaclava - pruhovaná"
       },
       {
-        "image": "img/w/showcase-08.jpg",
-        "alt": "Síťované šaty na plavky",
-        "link": "https://www.instagram.com/_naoku__/p/DJ6mdrbM3xD/"
+        "image": "img/uploads/img5357.jpeg",
+        "alt": "Set - čepice, palčáky"
       }
     ]
   },
@@ -53,7 +46,7 @@
     {
       "id": "tasky",
       "title": "Tašky",
-      "desc": "Síťovky a kabelky ze 100% bavlny. Letní drop ve dvou velikostech a šesti barvách podle signature drinku – do 31. 10. 2026, pak až na jaře.",
+      "desc": "Síťovky a kabelky ze 100% bavlny. Vybrat si můžete ze dvou velikostí a šesti barev podle signature drinku. Možnost objednání do 31. 10. 2026, poté až na jaře.",
       "prices": [
         {
           "name": "Bag 01 · vel. M",
@@ -71,11 +64,6 @@
           "link": "https://www.instagram.com/_naoku__/p/DcTt5hlgk6h/"
         },
         {
-          "image": "img/w/tasky-02.jpg",
-          "alt": "Bag 02 Limoncello spritz – světlá citronová",
-          "link": "https://www.instagram.com/_naoku__/p/DcTt5hlgk6h/"
-        },
-        {
           "image": "img/w/tasky-03.jpg",
           "alt": "Bag 01 Mojito – olivově zelená",
           "link": "https://www.instagram.com/_naoku__/p/DcTt5hlgk6h/"
@@ -83,6 +71,11 @@
         {
           "image": "img/w/tasky-04.jpg",
           "alt": "Bag 01 Cuba libre – čokoládově hnědá",
+          "link": "https://www.instagram.com/_naoku__/p/DcTt5hlgk6h/"
+        },
+        {
+          "image": "img/w/tasky-02.jpg",
+          "alt": "Bag 02 Limoncello spritz – světlá citronová",
           "link": "https://www.instagram.com/_naoku__/p/DcTt5hlgk6h/"
         },
         {
@@ -95,34 +88,12 @@
           "alt": "Bag 01 Sangria – sytě vínová",
           "link": "https://www.instagram.com/_naoku__/p/DcTt5hlgk6h/"
         }
-      ],
-      "items2": [
-        {
-          "image": "img/w/tasky-custom-01.jpg",
-          "alt": "Žlutá letní kabelka s mašličkou",
-          "link": "https://www.instagram.com/_naoku__/p/DLcVe9fsP_L/"
-        },
-        {
-          "image": "img/w/tasky-custom-02.jpg",
-          "alt": "Černá crossbody kabelka",
-          "link": "https://www.instagram.com/_naoku__/p/DG-_DURouhw/"
-        },
-        {
-          "image": "img/w/tasky-custom-03.jpg",
-          "alt": "Pouzdro na mobil a airpody",
-          "link": "https://www.instagram.com/_naoku__/p/C_lQnxKI0GH/"
-        },
-        {
-          "image": "img/w/tasky-custom-04.jpg",
-          "alt": "Háčkovaný držák na lahev",
-          "link": "https://www.instagram.com/_naoku__/p/C_lQnxKI0GH/"
-        }
       ]
     },
     {
       "id": "kapuce",
       "title": "Kapuce & balaclavy",
-      "desc": "Sophie hood podle vlastního návodu – háčkovaná, ale vypadá a chová se jako pletená. Merino, nebo huňatá alpaka. Balaclava na přání včetně barev a proužků.",
+      "desc": "Balaclava a Sophie hood, které vznikly podle mého vlastního návodu. Nerozcuchají účes a krásně zahřejí.\nSophie hood i balaclavu si můžete zvolit ze dvou typů - classic merino, nebo huňatá alpaka. \nVýběr barvy na přání dle domluvy.",
       "prices": [
         {
           "name": "Sophie hood classic · merino",
@@ -145,29 +116,13 @@
           "link": "https://www.instagram.com/_naoku__/p/DVV5hOwAuy7/"
         },
         {
-          "image": "img/w/kapuce-02.jpg",
-          "alt": "Huňatá Sophie hood na modelce",
-          "link": "https://www.instagram.com/_naoku__/p/DTfvZ7KAmpt/"
-        },
-        {
-          "image": "img/w/kapuce-03.jpg",
-          "alt": "Huňatá Sophie hood složená",
-          "link": "https://www.instagram.com/_naoku__/p/DTfvZ7KAmpt/"
-        },
-        {
-          "image": "img/w/kapuce-04.jpg",
-          "alt": "Merino balaclava – zelená šalvěj",
-          "link": "https://www.instagram.com/_naoku__/p/DTsxUIHgju_/"
-        },
-        {
-          "image": "img/w/kapuce-05.jpg",
-          "alt": "Pruhovaná custom balaclava",
-          "link": "https://www.instagram.com/_naoku__/p/DRZgRVZgmx8/"
-        },
-        {
           "image": "img/w/kapuce-06.jpg",
           "alt": "Pruhovaná balaclava na modelce",
           "link": "https://www.instagram.com/_naoku__/p/DRZgRVZgmx8/"
+        },
+        {
+          "image": "img/uploads/c0967972-a73d-4b24-b0bb-237053594418-1.jpeg",
+          "alt": "Balaclava z merina - šalvějová"
         },
         {
           "image": "img/w/kapuce-07.jpg",
@@ -175,16 +130,15 @@
           "link": "https://www.instagram.com/_naoku__/p/DFvOp5-skmc/"
         },
         {
-          "image": "img/w/kapuce-08.jpg",
-          "alt": "Smetanová balaclava",
-          "link": "https://www.instagram.com/_naoku__/p/DFacJb3sjfL/"
+          "image": "img/uploads/fa67a4da-a8f7-4194-8d8e-80711eeed6da-1.jpeg",
+          "alt": "Sophie hood z alpacy - smetanová"
         }
       ]
     },
     {
       "id": "cepice",
       "title": "Čepice",
-      "desc": "Merino čepice, které se nosí přeložené i volně. Brushed beanie ze 100% vlny – načesáním zjemní a na kůži je hebká. Barva a typ příze na přání.",
+      "desc": "Čepice z merina, které se nosí jak přeložené, tak i volně. Nově také Brushed beanie, která se načesáním zachlupatí a zjemní. Výběr barvy na přání dle domluvy. ",
       "prices": [
         {
           "name": "Brushed beanie",
@@ -197,51 +151,24 @@
       ],
       "items": [
         {
+          "image": "img/uploads/img5355.jpeg",
+          "alt": "Čepice z merina - kouřově modrá"
+        },
+        {
           "image": "img/w/cepice-01.jpg",
           "alt": "Pruhovaná brushed beanie",
           "link": "https://www.instagram.com/_naoku__/p/DTsxUIHgju_/"
         },
         {
-          "image": "img/w/cepice-02.jpg",
-          "alt": "Kouřově modrá merino čepice",
-          "link": "https://www.instagram.com/_naoku__/p/DTisC6AgkhS/"
-        },
-        {
-          "image": "img/w/cepice-03.jpg",
-          "alt": "Světle modrá merino čepice",
-          "link": "https://www.instagram.com/_naoku__/p/DRkVUfUjFK0/"
-        },
-        {
-          "image": "img/w/cepice-04.jpg",
-          "alt": "Růžová merino čepice",
-          "link": "https://www.instagram.com/_naoku__/p/DRkVUfUjFK0/"
-        },
-        {
-          "image": "img/w/cepice-05.jpg",
-          "alt": "Dvoubarevná čepice",
-          "link": "https://www.instagram.com/_naoku__/p/DCwDmW6OHi9/"
-        },
-        {
-          "image": "img/w/cepice-06.jpg",
-          "alt": "Vínová a krémová čepice",
-          "link": "https://www.instagram.com/_naoku__/p/DBqxk8_I6Fg/"
-        },
-        {
-          "image": "img/w/cepice-07.jpg",
-          "alt": "Složené čepice",
-          "link": "https://www.instagram.com/_naoku__/p/DEPYE7UM8ML/"
-        },
-        {
-          "image": "img/w/cepice-08.jpg",
-          "alt": "Černá čepice",
-          "link": "https://www.instagram.com/_naoku__/p/DTp7OYtArfN/"
+          "image": "img/uploads/img5354.jpeg",
+          "alt": "Pruhovaná brushed beanie - černá"
         }
       ]
     },
     {
       "id": "rukavice",
       "title": "Rukavice",
-      "desc": "Palčáky z merina nebo alpaky podle vlastního střihu, bezprstové na přání. Hezky ladí k čepici ze stejné příze.",
+      "desc": "Palčáky z merina nebo alpaky podle vlastního střihu, hezky ladí k čepici ze stejné příze.\nVýběr barvy a materiálu dle domluvy ve zprávách. ",
       "prices": [
         {
           "name": "Palčáky merino",
@@ -259,46 +186,20 @@
           "link": "https://www.instagram.com/_naoku__/p/DR7nTFrAphj/"
         },
         {
-          "image": "img/w/rukavice-02.jpg",
-          "alt": "Alpaca palčáky",
-          "link": "https://www.instagram.com/_naoku__/p/DQ46Lo_gkhJ/"
-        },
-        {
-          "image": "img/w/rukavice-03.jpg",
-          "alt": "Alpaca palčáky",
-          "link": "https://www.instagram.com/_naoku__/p/DQ46Lo_gkhJ/"
-        },
-        {
-          "image": "img/w/rukavice-04.jpg",
-          "alt": "Bezprstové rukavičky",
-          "link": "https://www.instagram.com/_naoku__/p/DE5gyvuOtFU/"
+          "image": "img/uploads/img5361.jpeg",
+          "alt": "Palčáky z alpaky - hnědé"
         }
       ]
     },
     {
       "id": "hracky",
       "title": "Hračky, girlandy & řetízky",
-      "desc": "Zvířátka, girlandy se jménem, řetízky na kočárek a chrastítka pro miminka. Dárek, který zůstane.",
+      "desc": "Zvířátka, girlandy se jménem a řetízky na kočárek. Dárek, kterým potěšíte.",
       "items": [
-        {
-          "image": "img/w/hracky-01.jpg",
-          "alt": "Trio – tygr, hroch a lev v krabičce",
-          "link": "https://www.instagram.com/_naoku__/p/DWb5Ag-AiUS/"
-        },
         {
           "image": "img/w/hracky-02.jpg",
           "alt": "Girlanda Teo s hrošíkem",
           "link": "https://www.instagram.com/_naoku__/p/DatC86Mik-z/"
-        },
-        {
-          "image": "img/w/hracky-03.jpg",
-          "alt": "Řetízek na kočárek – medvídci",
-          "link": "https://www.instagram.com/_naoku__/p/DTk-qrfAuPG/"
-        },
-        {
-          "image": "img/w/hracky-04.jpg",
-          "alt": "Zajíček v šatech",
-          "link": "https://www.instagram.com/_naoku__/p/DHLBH7VIilP/"
         },
         {
           "image": "img/w/hracky-05.jpg",
@@ -311,45 +212,59 @@
           "link": "https://www.instagram.com/_naoku__/p/DEU6jT1MErx/"
         },
         {
-          "image": "img/w/hracky-07.jpg",
-          "alt": "Zvířátka v košíku",
-          "link": "https://www.instagram.com/_naoku__/p/C3S_wFJs_8X/"
+          "image": "img/uploads/img5360.jpeg",
+          "alt": "Zajíček"
         },
         {
-          "image": "img/w/hracky-08.jpg",
-          "alt": "Barevné bambulky v košíčku",
-          "link": "https://www.instagram.com/_naoku__/p/DCj5Lm7uUZN/"
+          "image": "img/uploads/img5365.jpeg",
+          "alt": "Sloníci, balónky - girlanda"
+        },
+        {
+          "image": "img/uploads/img5359.jpeg",
+          "alt": "Zvířátka - trio"
+        },
+        {
+          "image": "img/uploads/img5363.jpeg",
+          "alt": "Sloníci - řetízek"
+        },
+        {
+          "image": "img/uploads/img5362.jpeg",
+          "alt": "Racek - variace"
+        },
+        {
+          "image": "img/uploads/img5364.jpeg",
+          "alt": "Medvídci - řetízek"
         }
       ]
     }
   ],
   "about": {
     "title": "O naOku",
-    "text": "Jsem Kačka a háčkuju od roku 2024 – začala jsem zvířátky pro synovce a dnes háčkuju tašky, kapuce, čepice i oblečení podle vlastních návodů. Pracuju s bavlnou, merinem a alpakou, každý kus vzniká ručně a většina na přání: vyberete barvu, materiál a já ho uháčkuju přesně pro vás. Na každé objednávce najdete saténovou etiketu naOku.",
+    "text": "Jsem Kačka a k háčkování jsem se dostala už v roce 2018. Začala jsem čelenkami a učila se různé techniky a styly. Postupně jsem se dopracovala ke zvířátkům pro synovce, čepicím a dalším věcem podle návodu. Dnes háčkuju tašky, balaclavy, sophie hoods - nejprodávanější kousek, čepice i oblečení podle svých vlastních návodů. Pracuju s bavlnou, merinem a alpakou, každý kus vzniká ručně a většina na přání: vyberete barvu, materiál a já ho uháčkuju přesně pro vás. Každý kousek je originál. Na produktech najdete saténovou etiketu naOku. Objednávky přijímám přes instagram - tlačítko nahoře na webu. ",
     "image": "img/w/o-mne.jpg",
     "image_alt": "Kačka v háčkované kapuci",
     "stats": [
       {
-        "value": "90+",
-        "label": "projektů za rok 2025"
+        "value": "150+",
+        "label": "produktů vytvořily moje ruce"
       },
       {
-        "value": "27",
-        "label": "čepic"
+        "value": "30+",
+        "label": "Sophie hoods a balaclav"
       },
       {
-        "value": "14",
-        "label": "balaclav"
+        "value": "1000+",
+        "label": "hodin strávených ruční prací"
       },
       {
         "value": "100 %",
-        "label": "ručně"
+        "label": "ručně, lokálně, s láskou"
       }
     ]
   },
   "cenik": {
     "title": "Ceník",
-    "note": "Nejprodávanější produkty, platný od 21. 8. 2026. Další custom kousky vždy po dohodě ve zprávách.",
+    "note": "Ceník nejprodávanějších produktů platný od 21. 8. 2026. \nJakékoliv jiné custom kousky vždy po dohodě ve zprávách.",
     "rows": [
       {
         "name": "Brushed beanie",
@@ -390,31 +305,31 @@
     ]
   },
   "postup": {
-    "title": "Jak to probíhá",
+    "title": "Jak probíhá objednání?",
     "steps": [
       {
         "title": "Napíšeš, co tě napadá",
-        "text": "Taška na léto, kapuce na zimu, hračka pro miminko – nebo něco, co ještě nikdo nemá. Klidně jen fotka pro inspiraci."
+        "text": "Taška na léto, balaclava na zimu, hračka pro miminko – nebo něco, co ještě nikdo nemá. Klidně jen fotka pro inspiraci."
       },
       {
         "title": "Domluvíme materiál a barvu",
-        "text": "Bavlna, merino, alpaka. Pošlu ukázky přízí, vybereš, poradím, co se k čemu hodí."
+        "text": "Bavlna, merino, alpaka. Pošlu ukázky přízí a barevnou paletu, ze které vybereš. Ráda ti poradím, který materiál zvolit k určitému produktu. "
       },
       {
         "title": "Uháčkuju a pošlu",
-        "text": "Každý kus vzniká ručně, takže počítej s pár týdny. Cestou ti ukážu, jak roste."
+        "text": "Každý kus vzniká ručně, takže počítej s pár týdny. V průběhu tě budu informovat, jak probíhá výroba. "
       }
     ]
   },
   "cta": {
-    "eyebrow": "Objednávky jdou přes zprávy na Instagramu",
+    "eyebrow": "Objednávej přes zprávy na Instagramu",
     "button": "Napsat @_naoku__ ↗"
   },
   "footer": {
     "left": "naOku · Kačka",
     "author_handle": "@kackastr_",
     "author_link": "https://www.instagram.com/kackastr_/",
-    "right": "háčkování na zakázku"
+    "right": "Háčkování na zakázku"
   },
   "instagram": "https://www.instagram.com/_naoku__/",
   "handle": "@_naoku__"
